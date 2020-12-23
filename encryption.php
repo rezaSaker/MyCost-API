@@ -15,7 +15,7 @@ function Encrypt($string, $key)
     $encryptedString = openssl_encrypt($string, $method, $key, 0, $iv);
     $encryptedString = base64_encode($encryptedString);
 	
-	return $encryptedString;
+    return $encryptedString;
 }
 
 function Decrypt($string, $key)
